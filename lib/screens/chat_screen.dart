@@ -45,7 +45,6 @@ class _ChatScreenState extends State<ChatScreen> {
   @override
   void initState() {
     textEditingController = TextEditingController();
-    Provider.of<ModelsProvider>(context, listen: false).getAllModels();
     super.initState();
   }
 

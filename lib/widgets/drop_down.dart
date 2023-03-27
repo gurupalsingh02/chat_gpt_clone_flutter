@@ -14,6 +14,12 @@ class ModelsDropDownWidget extends StatefulWidget {
 
 class _ModelsDropDownWidgetState extends State<ModelsDropDownWidget> {
   @override
+  void initState() {
+    Provider.of<ModelsProvider>(context, listen: false).getAllModels();
+    super.initState();
+  }
+
+  @override
   Widget build(BuildContext context) {
     final modelsProvider = Provider.of<ModelsProvider>(context);
     return modelsProvider.getModelList().isEmpty

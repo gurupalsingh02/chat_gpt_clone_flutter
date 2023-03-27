@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(create: (context) => ChatProvider()),
       ],
       child: MaterialApp(
+          title: 'Chat GPT Clone',
           debugShowCheckedModeBanner: false,
           theme: ThemeData(
               scaffoldBackgroundColor: scaffoldBackGroundColor,
